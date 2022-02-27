@@ -1,5 +1,6 @@
 package org.example;
 
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -12,6 +13,7 @@ public class MainPageTest extends AbstractTest {
     private WebDriver driver;
 
     @Test
+    @Description(value = "Проверка клика по элементу")
     void clickToBeauty(){
         new MainPage(getWebDriver()).navigateToBeauty();
         Assertions.assertEquals("https://www.sinsay.com/ru/ru/beauty",getWebDriver().getCurrentUrl());

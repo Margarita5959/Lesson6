@@ -1,5 +1,6 @@
 package org.example;
 
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -11,6 +12,7 @@ import java.time.Duration;
 public class LogininTest extends AbstractTest {
 
     @Test
+    @Description(value = "Проверка авторизации существующего пользователя")
     void loginIn(){
 
         new MainPage(getWebDriver()).goToAccountPage();

@@ -22,7 +22,7 @@
     <webdrivermanager.version>5.0.3</webdrivermanager.version>
     <allure.version>2.15.0</allure.version>
     <allure-maven.version>2.10.0</allure-maven.version>
-    <maven.surefire.plugin>2.22.0</maven.surefire.plugin>
+    <maven.surefire.plugin>2.22.1</maven.surefire.plugin>
 
   </properties>
 
@@ -136,6 +136,7 @@
               <value>true</value>
             </property>
           </systemProperties>
+
         </configuration>
         <dependencies>
           <dependency>
@@ -156,7 +157,7 @@
         <version> ${allure-maven.version} </version>
         <configuration>
 
-          <buildDirectory>/home/rita/Рабочий стол/results</buildDirectory>
+          <buildDirectory>/home/rita/Lesson6/</buildDirectory>
         </configuration>
       </plugin>
     </plugins>
